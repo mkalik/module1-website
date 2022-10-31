@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 16px;
+    background-color: #d9dcd6;
+}
+header {/*Removed .header class */
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+header h1 {/*added the color attribute from the redundant .seo class.  */
+    display: inline-block;
+    font-size: 48px;
+    color: #d9dcd6;
+}
+
+header ul{ /*combined several different elements into one semantic selector  */
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+header ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+header a { /*a means of telling which a element is being selected rather than having it apply to the whole page. Makes it easier incase there are other a elements. */
+    text-decoration: none;
+    color: #ffffff;
+}
+img { /*removes redundancy in the later content images selector*/
+    max-height:200px;
+}
+
+.hero  { /*main image on the page*/
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+section.content { /*defines the size of elements in the section containing the three horizontal boxes that contain search engine optimization, online reputation management, and social media marketing*/
+    display: inline-block;
+    width: 75%;
+    margin-left: 20px;
+}
+
+.search-online-social div{ /*combined the styles for search-engine-optimization,online-reputation-management, and social-media-marketing. Name reflects order*/
+    height: 300px;
+    padding: 50px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*these two selectors determine the positioning of our images in content. removes unnecessary classes*/
+.search-online-social img:nth-child(odd){
+    margin-right:25px;
+    float:left;
+}
+.search-online-social img:nth-child(even){
+    margin-left:25px;
+    float:right;
+}
+
+.search-online-social h2 { /*defines size of headers within search online social class*/
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right:25px;
+    font-size: 36px;
+}
+
+section.benefits { /* combined all styling for sections within the benefits bar */
+    padding: 20px;
+    margin-bottom:32px;
+    margin-right: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+    color: #ffffff;
+}
+.benefits img { /*combined attributes for all images in the previously unique benefit-lead, benefit-brand, and benefit-cost images.*/
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
+.benefits h3,p { /*combined attributes for all text in the previously unique benefit-lead, benefit-brand, and benefit-cost text..*/
+    margin-top: 15px;
+    margin-bottom:10px;
+}
+
+footer { /*changed div class element to footer element*/
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer h2 {
+    font-size: 20px;
+}
